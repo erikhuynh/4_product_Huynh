@@ -3,30 +3,64 @@
 <html lang="en">
 
     <head>
-       
+
         <!-- character encoding -->
         <meta charset="UTF-8">
-        
+
         <!-- title tag -->
         <title>Product/Company Page Project</title>
-       
-         <!-- mobile-friendly viewport -->
+
+        <!-- mobile-friendly viewport -->
         <meta name="viewport" content="width=device-
-        width, initial-scale=1">
-        
+                                       width, initial-scale=1">
+
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
-        
+
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" 
-        href="css/style.css">
-        
+              href="css/style.css">
+
     </head>
 
     <body>
-        
-        <h1>Hello World!</h1>
-        <h1>Good Morning!</h1>
-        <h1>Please work!</h1>
 
-    </body>
+        <!-- top nav, desktop and tablet --> 
+        <div class="w3-bar #ee5833 w3-theme-d1">
+            <a href="#" class="w3-bar-item w3
+                               button">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 3</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+        </div>
+
+        <!-- top nav, mobile -->
+        <div id="mobileNav" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+            </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="about">
+            <h3 class="w3-center">ABOUT ME</h3>
+            <p class="w3-center"><em>I love photography</em></p>
+            <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.</p>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+                    <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+                </div>
+
+                <!-- Javascript -->
+                <script src="js/topNav.js"></script>
+
+                </body>
