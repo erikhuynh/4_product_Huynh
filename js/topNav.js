@@ -6,3 +6,4 @@ function topNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+

@@ -1,47 +1,252 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    
+
     <head>
         <!-- declare character encoding -->
         <meta charset="UTF-8">
-        
+
         <!-- title tag -->
         <title>Product/Company Page Project - Erik Huynh</title>
         
+        <!-- Summary of Parallax Project -->
+        <meta name="description" content="The project serves as a purpose to promote the business of Andolinis Restauran. The project shows special aspects of the menu, qualities, and more information.">
+
         <!-- mobile-friendly viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
-        
+
         <!-- custome style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        
+
         <!-- font awesome icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet">
-        
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
-    
+
     <body>
-    
+
         <!-- top nav, desktop and tablet -->
         <div class="w3-top">
-            <div class="w3-bar w3-theme w3-hide-small">
-               <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off">
-                    <a href="#home" class="w3-bar-item w3-button">ANDOLINIS RESTAURANT</a>
-                    <a href="#about" class="w3-bar-item w3-button w3-right">Reserve Online</a>
-                    <a href="#about" class="w3-bar-item w3-button w3-right">About</a>
-                    <a href="#about" class="w3-bar-item w3-button w3-right">Special Events</a>
-                    <a href="#about" class="w3-bar-item w3-button w3-right">Menu</a>
-               </div>  
+            <div class="w3-bar w3-theme">
+                <a href="#andolinis-restaurant" class="w3-bar-item w3-button" style="font-size:25px">Andolinis Restaurant</a>
+                <a href="#location-and-info" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-map-marker"></i>Location and Info</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i>About</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-cutlery"></i>Menu</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+
+            <!-- top nav mobile -->
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#menu" class="w3-bar-item w3-button"><i class="fa fa-cutlery"></i>Menu</a>
+                <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i>About</a>
+                <a href="#location-and-info" class="w3-bar-item w3-button"><i class="fa fa-map-marker"></i>Location and Info</a>
             </div>
         </div>
-    
+
+        <!-- Title Section -->
+        <header class="bgimg-1 w3-display-container" id="andolinis-restaurant">
+            <div class="w3-display-middle w3-padding">
+                <p><span class="w3-tag2 w3-round-xxlarge" >We're open every day!</span></p>
+                <span class="w3-tag" style="font-size:50px">SPECIAL DINING FOR DOWNTOWN ANDOVER</span>
+                <p><a href="#menu" class="w3-button w3-xlarge w3-round-xxlarge w3-black">See Our Menu</a></p>
+            </div>
+            <div class="w3-display-bottomleft w3-padding">
+
+            </div>
+
+        </header>
+
+        <!-- Second Section (menu) -->
+        <!-- Menu Container -->
+        <div style="font-size:8vw;" class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+            <div class="w3-content">
+
+                <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><i2 class="fa fa-cutlery"></i2>THE MENU<i2 class="fa fa-cutlery"></i2></h1>
+                <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                        <div class="heading1 w3-col s4 tablink w3-padding-large w3-hover-red">Starters</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                        <div class="heading1 w3-col s4 tablink w3-padding-large w3-hover-red">Old School</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                        <div class="heading1 w3-col s4 tablink w3-padding-large w3-hover-red">Pasta</div>
+                    </a>
+                </div>
+
+                <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+                    <h1><b>Fired Calamari</b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$9.00</span></h1>
+                    <hr>
+
+                    <h1><b>Antipasto Platter</b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$18.00</span></h1>
+                    <hr>
+
+                    <h1><b>Prosciutto w/Fig Jam and Crostini</b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$12.00</span></h1>
+                    <hr>
+
+                    <h1><b>Crunchy Meatballs w/Tomato Basil Sauce</b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$10.00</span></h1>
+                    <hr>
+
+                    <h1><b>Shrimp Scampi w/Smashed Tomatoes and Crostini</b><span class="w3-right w3-tag3 w3-dark-grey w3-round">$13.00</span></h1>
+                    <hr>
+                </div>
+
+                <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                    <h1><b>Andolini’s Chicken “a la Parmigiano”</b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$20.00</span></h1>
+                    <hr>
+
+                    <h1><b>Double cut Pork Chop w/ Hot Peppers, Sausage, and Potatoes</b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$24.00</span></h1>
+                    <hr>
+
+                    <h1><b>Sirloin Steak & Garlic Parmesan Frites, Oven Roasted Tomato</b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$25.00</span></h1>
+                    <hr>
+
+                    <h1><b>Killer Burger w/ French Fries, bacon, cheese, and mushrooms </b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$16.00</span></h1>
+                </div>
+
+
+                <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                    <h1><b>Andolini’s Famous Spaghetti Tomato Basil w/ crunchy meatballs</b><span class="w3-right w3-tag3 w3-dark-grey w3-round">$9.00</span></h1>
+                    <hr>
+
+                    <h1><b>Spaghetti w/ Local Clams, a splash of tomato, parsley </b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$22.00</span></h1>
+                    <hr>
+
+                    <h1><b>Penne w/ Sausage, Peas, Tomato, and Cream </b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$10.00</span></h1>
+                    <hr>
+
+                    <h1><b>Mushroom Ravioli w/ More Mushrooms, Truffle, and Parmigiano </b> <span class="w3-right w3-tag3 w3-dark-grey w3-round">$22.00</span></h1>
+                </div><br>
+
+            </div>  
+        </div>
+
+        <!-- Third Section -->
+        <!-- slideshow -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- slide 1 -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/salad-bgimg4.jpg" width="100%" height="350px" alt="Salad">
+            </div>
+
+
+            <!-- slide 2 -->
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/clam-noodles-bgimg2.jpg" width="100%" height="350px" alt="Clam Noodles">
+            </div>
+
+            <!-- slide 3 -->
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/steak-bgimg3.jpg" width="100%" height="350px" alt="Steak Dish">
+            </div> 
+        </div>
+
+        <!-- Fourth Section (about) -->
+        <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+            <div class="w3-content">
+                <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About Andolinis</h1>
+                <p style="font-size:16px;">The Italian restaurant is located in Andover, MA. If you need a nice and calm place to eat with your family, or a few drinks to have after a long day at work, or even a banquet for an anniversary, Andolinis Restaurant is the perfect place in town to go to! They serve pasta, pizza, steak, salads and seafood. They even have a gluten free menu because they believe everyone has the right to enjoy their meals. The restaurant is open every day, even on holidays! Andolinis are continously looking to diverse their menu so that it can match everyone's desires, which is why they opened up the popular restaurant next to Andolinis, Sauce. As a promis, Andolinis will never disappoint your taste buds! </p>
+
+                <p style="font-size:30px;">We are proud of what we do here!</p>
+                <img src="img/Andolinis-interior.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+
+                <h2><b1>Opening Hours</b1></h2>
+
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <p>Monday 5:00 PM - 9:00 PM</p>   
+                    </div>
+                    <div class="w3-col s6">
+                        <p>Tuesday - Saturday 5:00 PM - 10:00 PM</p>
+
+                    </div>
+                </div>
+                <div>
+                    <p>Sunday 11:00 AM - 8:00 PM</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Fifth Section (location and info) -->
+        <div class="bgimg-2 w3-container w3-padding" id="location-and-info">
+            <div class="w3-content">
+                <h4 class="w3-tag4">Location and Info</h4>
+            </div>
+
+
+            <div class="section1 w3-row w3-padding-32 w3-section">
+                <div class="w3-col m4 w3-container">
+                    <!-- Add Google Maps -->
+                    <div>
+                        <img class="img3" src="img/Andolinis-location.jpg" alt="Location" style="width:100%;height:400px;">
+                    </div>
+                </div>
+                <div class="w3-col m8 w3-panel">
+                    <div2 class="w3-large w3-margin-bottom">
+                        <i4 class="fa fa-map-marker fa-fw  w3-xlarge w3-margin-right"></i4>19 Essex Street, Andover, MA 01810<br>
+                        <i4 class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i4> Phone: +1 978-475-4811<br>
+                        <i4 class="fa fa-envelope fa-fw  w3-xlarge w3-margin-right"></i4> Email: andolinisrestaurant.com<br>
+                    </div2>
+                </div>
+
+                <div class="w3-col m8 w3-panel">
+                    <div class="w3-container">
+                        <button onclick="document.getElementById('id01').style.display='block'" class=" text3 w3-button w3-large">Make A Reservation Now!</button>
+
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                                <div class="w3-center"><br>
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                                    <img src="img/reserve-now-img-.jpg" style="width:30%" class="w3-circle w3-margin-top" alt="table of food and drink">
+                                </div>
+
+                                <form action="/action_page.php" target="_blank">
+                                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Number of Guests" required name="People"></p>
+                                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"></p>
+                                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message or Special requirements" required name="Message"></p>
+                                    <p><button class="w3-button w3-light-grey w3-block" type="submit"><a href="http://andolinisrestaurant.com/online-reservations/">Reserve Now</a></button></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+            <div class="w3-xlarge w3-section">
+                <a https://www.facebook.com/andolinis01810 class="fa fa-facebook-official w3-hover-opacity"></a>
+                <a href="https://www.instagram.com/spirocks/" class="fa fa-instagram w3-hover-opacity"></a>
+                <a href="https://plus.google.com/+AndolinisRestaurantAndover" class="fa fa-google-plus w3-hover-opacity"></a>
+                <a href="https://twitter.com/andolinis01810" class="fa fa-twitter w3-hover-opacity"> </a>
+            </div>
+            <p>Join Our Beloved Community!</p>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="js/topNav.js"></script>
+        <script src="js/slideshow.js"></script>
+        <script src="js/menu.js"></script>
+        
     </body>
 
 </html>
